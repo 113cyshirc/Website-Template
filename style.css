@@ -142,6 +142,8 @@ tr {
 
 /* Popup Control */
 
+/* 若需要用到Popup在解開註解(VSCode: Ctrl+K -> Ctrl+U) */
+/* 
 .close {
     color: #aaa;
     position: fixed;
@@ -159,9 +161,12 @@ tr {
     text-decoration: none;
     cursor: pointer;
     transform: scale(1.2, 1.2);
-}
+}  
+*/
 
-.popup {
+/* 若要使用請複製一份並重新命名(改掉popup) */
+/*
+ .popup { 
     display: none;
     position: fixed;
     top: 0;
@@ -180,13 +185,13 @@ tr {
     padding: 0;
     position: relative;
     background-color: #020614;
-}
+} 
+*/
 
 /* Screen Size Control */
 
-@media (min-width:580px) {
+@media (min-width:580px) { /* 電腦 */
 
-    /* Computer */
     /* Computer Background */
     .bg {
         background-image: url(./bg-pc.png);
@@ -235,9 +240,8 @@ tr {
     }
 }
 
-@media (max-width:580px) {
+@media (max-width:580px) { /* 手機 */
 
-    /* Phone */
     /* Phone Background */
     .bg {
         background-image: url(./bg-phone.png);
@@ -353,7 +357,7 @@ tr {
     }
 }
 
-@keyframes top {
+@keyframes top { /* 這裡可以自己更動閃爍效果 */
 
     /* On Cover Loaded */
     0% {
@@ -401,7 +405,7 @@ tr {
     }
 }
 
-@keyframes bg {
+@keyframes bg { /* 等待封面載入 */
     0% {
         opacity: 0;
     }
@@ -415,7 +419,7 @@ tr {
     }
 }
 
-@keyframes flash {
+@keyframes flash { /* 霓虹燈效果 */
 
     /* Constant Flashing */
     0% {
