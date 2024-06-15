@@ -293,16 +293,17 @@ content="網站說明">
 ^*橘色框是後製上去的，原本沒有*
 
 #### plate
-用於需要邊框的內容，同樣有[自動縮排(5%)](./style.css#L69)，並且每層都會縮。
+用於需要**邊框**的內容，同樣有[自動縮排(5%)](./style.css#L69)，並且每層都會縮。
 
 ![plate](./res/plate.png)
 
 #### button
-按鈕，滑鼠放上去會變色。
+按鈕，滑鼠放上去會變色。變色的顏色可以在[這裡](./style.css#L101)設定。
 
 自帶全螢幕伸展。
 
-自帶轉場，時間請在[這裡](./style.css#L96)設定
+自帶轉場，時間請在[這裡](./style.css#L96)設定。
+
 
 ```html
 <div class="button" onclick="">
@@ -313,7 +314,7 @@ content="網站說明">
 ![button2](./res/button2.png)
 
 #### tile
-有時候你只想要簡單的單行列表完素，這就是你要的
+有時候你只想要簡單的單行列表完素，這就是你要的。
 ```html
 <div class="plate">
     <div class="tile">
@@ -326,7 +327,8 @@ content="網站說明">
 ![tile](./res/tile.png)
 
 #### no-change
-有些連結你不想一開始就變色，用這個可以讓連結在hover的時候才變色。
+有些連結你不想一開始就變色，用這個可以讓連結在hover的時候才變色。顏色可以在[這裡](./style.css#L106)設定。
+
 ![original](./res/no-change1.png)
 ![hover](./res/no-change2.png)
 
@@ -356,7 +358,7 @@ content="網站說明">
 #### Popup (Modal)
 跳出來的東西。
 
-class要改，解開[這個註解](./style.css#L145)，並複製一份[popup專用style](./style.css#L167) (記得要讓它是正式程式碼，不是註解)，複製後記得將`popup`改成你的class (`popup`、`popup-content`的popup都要改掉)。
+class要改成你想要的名字、解開[這個註解](./style.css#L145)，並複製一份[popup專用style](./style.css#L167) (記得要讓它是正式程式碼，不是註解)，複製後記得將`popup`改成你的class名字 (`popup`、`popup-content`的popup都要改掉)。
 ```html
 <div class="名字" id="id" onclick="hide_form();">
     <span class="close" onclick="hide_form();">&times;</span>
@@ -449,4 +451,4 @@ function hide_名字() {
 }
 ```
 
-# 恭喜你讀完了，希望你有掌握這個模板的技巧!
+# 恭喜你讀完了，希望你有掌握這個模板的技巧 !
